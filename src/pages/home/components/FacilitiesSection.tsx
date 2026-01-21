@@ -63,6 +63,7 @@ export default function FacilitiesSection() {
                       src={facility.image}
                       alt={facility.name}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
                     />
                   </div>
                   <div className={`absolute top-4 left-4 sm:top-6 sm:left-6 bg-gradient-to-r ${facility.color} text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold`}>
@@ -95,7 +96,7 @@ export default function FacilitiesSection() {
                   href={facility.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center bg-gradient-to-r ${facility.color} text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:shadow-xl transition-all hover:scale-105 group/btn text-sm sm:text-base font-medium whitespace-nowrap cursor-pointer`}
+                  className={`inline-flex items-center justify-center bg-gradient-to-r ${facility.color} text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:shadow-xl transition-all hover:scale-105 active:scale-100 group/btn text-sm sm:text-base font-medium whitespace-nowrap cursor-pointer touch-manipulation min-h-[44px] sm:min-h-[48px]`}
                 >
                   詳細を見る
                   <i className="ri-arrow-right-line ml-2 group-hover/btn:translate-x-1 transition-transform"></i>

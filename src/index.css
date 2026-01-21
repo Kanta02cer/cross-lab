@@ -7,10 +7,19 @@
 @layer base {
   body {
     font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   html {
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* モバイル最適化: タッチ操作の改善 */
+  button,
+  a {
+    touch-action: manipulation;
   }
 }
 
@@ -27,6 +36,29 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  /* モバイルメニューアニメーション */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .mobile-menu-enter {
+    animation: slideDown 0.3s ease-out forwards;
+  }
+
+  /* モバイル最適化: スムーズなスクロール */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
     }
   }
 }

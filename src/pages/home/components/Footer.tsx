@@ -42,7 +42,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-white/70 hover:text-white transition-colors text-sm inline-flex items-center group"
+                    className="text-white/70 hover:text-white active:text-white transition-colors text-sm inline-flex items-center group min-h-[44px] py-2 touch-manipulation"
                   >
                     <i className="ri-arrow-right-s-line mr-1 group-hover:translate-x-1 transition-transform"></i>
                     {link.name}
@@ -61,7 +61,7 @@ export default function Footer() {
                   href="https://crossoneoffice.site/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors text-sm inline-flex items-center group"
+                  className="text-white/70 hover:text-white active:text-white transition-colors text-sm inline-flex items-center group min-h-[44px] py-2 touch-manipulation"
                 >
                   <i className="ri-external-link-line mr-2"></i>
                   cross hub
@@ -72,7 +72,7 @@ export default function Footer() {
                   href="https://crossoneoffice.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors text-sm inline-flex items-center group"
+                  className="text-white/70 hover:text-white active:text-white transition-colors text-sm inline-flex items-center group min-h-[44px] py-2 touch-manipulation"
                 >
                   <i className="ri-external-link-line mr-2"></i>
                   cross one

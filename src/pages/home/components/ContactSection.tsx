@@ -35,7 +35,7 @@ export default function ContactSection() {
             href="https://line.me/R/ti/p/@crosslab"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full hover:shadow-2xl transition-all hover:scale-105 group text-base sm:text-lg font-bold whitespace-nowrap cursor-pointer w-full sm:w-auto"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full hover:shadow-2xl transition-all hover:scale-105 active:scale-100 group text-base sm:text-lg font-bold whitespace-nowrap cursor-pointer w-full sm:w-auto touch-manipulation min-h-[48px] sm:min-h-[56px]"
           >
             <i className="ri-line-fill text-2xl mr-3"></i>
             LINEで入居・内覧を相談する
