@@ -172,7 +172,7 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center w-full pt-20 sm:pt-24">
-        <div className="observe-fade opacity-0">
+        <div className="animate-fade-in">
           {/* Badge */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 sm:px-6 py-1.5 sm:py-3 mb-4 sm:mb-8">
             <span className="text-white text-[10px] xs:text-xs sm:text-sm font-medium">
@@ -208,14 +208,6 @@ export default function HeroSection() {
               施設を見る
             </a>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:block">
-        <div className="flex flex-col items-center animate-bounce">
-          <span className="text-white/70 text-xs mb-2">SCROLL</span>
-          <i className="ri-arrow-down-line text-white/70 text-xl"></i>
         </div>
       </div>
     </section>
